@@ -1,0 +1,1033 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #000000;
+    --secoundry-color: #72D0D7;
+    --third-color: #ffebad;
+    --fourth-color: #DEE0E2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Poppins", sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.NavbarSection {
+    padding-top: 4rem;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-radius: 4rem;
+    background: rgba(25, 31, 36, 0.8);
+    color: var(--secondary-color);
+    gap: 3.2rem;
+    padding-left: 30px;
+    backdrop-filter: blur(8px);
+    color: var(--fourth-color);
+}
+
+.NavbarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -25px;
+}
+
+.Logo {
+    display: flex;
+    justify-content: center;
+}
+
+.Logo img {
+    width: 7.3rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.NavMenuConteiner,
+.NavLastContainer {
+    display: flex;
+    align-items: center;
+}
+
+.NavMenuConteiner {
+    gap: 2rem;
+}
+
+.List a,
+.Language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+    font-weight: 400;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.Rescue {
+    color: #ea2424;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.DownloadApp button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.DownloadApp button {
+    transition: .3s ease;
+    background-color: #4fc4cd;
+    padding: 1.5rem 2rem;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+
+.HoverContainer {
+    position: absolute;
+    top: 4rem;
+    left: 14rem;
+    padding-top: 4rem;
+    display: none;
+}
+
+.List:hover .HoverContainer {
+    display: flex;
+}
+
+.List a:hover {
+    color: var(--secoundry-color);
+
+}
+
+.HoverMenuList .HoverList:hover {
+    color: var(--secoundry-color);
+
+}
+
+.HoverMenuList {
+    padding: 15px 43px 2px 15px;
+    margin-left: -30px;
+    color: var(--secondary-color);
+    background: rgba(25, 31, 36, 0.7);
+    backdrop-filter: blur(100px);
+}
+
+.HoverList {
+    color: rgb(222, 224, 226);
+    font-weight: 400;
+    font-size: 12px;
+    margin: 1.6rem 0;
+    cursor: pointer;
+}
+
+
+
+/* ______________________________________hero-section----------------------- */
+.HomeSection {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.HomeSection video {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.HomeOverlay {
+    background: linear-gradient(#0e0b0b 1%, rgba(0, 0, 0, 0.4), #000 95%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.Language #LanguageIcon {
+    font-size: 1.5rem;
+    margin-top: -8px;
+    margin-right: 6px;
+    color: #5b656d;
+}
+
+.content {
+    font-size: 6.4rem;
+    font-weight: 600;
+    color: #f4f6f7;
+    /* background: linear-gradient(to right, rgb(178, 178, 182), rgb(147, 231, 237)) text; */
+}
+
+#HomeSlideTitle {
+    height: 8.5rem;
+    overflow: hidden;
+    line-height: 9rem;
+}
+
+#animationText li {
+    list-style: none;
+}
+
+#animationText {
+    animation: slide 5s steps(7) infinite;
+    position: relative;
+    top: 0;
+}
+
+@keyframes slide {
+    100% {
+        top: -64rem;
+    }
+}
+
+.HomeMainTitleContainer {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    top: 30%;
+    z-index: 1;
+}
+
+.QRContainer {
+    position: absolute;
+    top: 60%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.QRContent:hover {
+    transform: scale(1.2);
+}
+
+.QRContent {
+    display: flex;
+    align-items: center;
+    background-color: #21292f;
+    padding: .4rem 1.6rem .4rem .4rem;
+    border-radius: 1rem;
+    gap: .8rem;
+    margin-top: 2rem;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.QRImg img {
+    width: 8rem;
+    height: auto;
+
+}
+
+.QRText {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #efeff0;
+}
+
+/* -----------------------------card section--------------------------- */
+
+.card-box {
+    height: 600px;
+    background-color: #000000f7;
+}
+
+.card-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: #8a8a8a00;
+
+}
+
+.card-items {
+    display: flex;
+    /* margin-top: 60px; */
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-family: poppins;
+}
+
+.card {
+    background-color: #00000000;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    color: var(--secoundry-color);
+    backdrop-filter: blur(2px) saturate(164%);
+    -webkit-backdrop-filter: blur(2px) saturate(164%);
+    background-color: rgba(157, 183, 183, 0.31);
+}
+
+
+.serviceCategory {
+    position: absolute;
+    z-index: 1;
+    top: 85%;
+    display: flex;
+    justify-content: center;
+}
+
+.serviceContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.serviceList img {
+    width: 6.8rem;
+    height: auto;
+}
+
+.serviceList:hover {
+    background-color: rgba(79, 196, 205, 0.04);
+}
+
+.serviceList {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 2rem;
+    padding: 2.4rem;
+    transition: .3s ease;
+}
+
+.serviceListName {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.serviceCardPage {
+    padding-top: 5rem;
+}
+
+.SecondPageSection {
+    background-color: #000;
+}
+
+.serviceCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(265deg, #FFFEF3 42.98%, #75D1D6 92.77%);
+    padding: 8rem 8.8rem;
+    height: 40rem;
+    width: 81%;
+    border-radius: 4rem;
+}
+
+#serviceCard {
+    background: linear-gradient(265deg, #FFFEF3 42.98%, #FAC7C7 92.77%);
+}
+
+.serviceCardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.serviceCardImg img {
+    width: 45rem;
+    height: auto;
+    max-width: none;
+}
+
+.serviceCardTitle {
+    font-size: 4.8rem;
+    font-weight: 600;
+    color: #303030;
+    line-height: 120%;
+    font-family: 'Poppins';
+}
+
+.serviceCardSubTitle {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000;
+    line-height: 140%;
+    margin-top: 1.2rem;
+}
+
+button#pills {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+button#pills-profile-tab {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+button#pills-contact-tab {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+button#pills-home-tab {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+button#pills-tyres-tab {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+button#pills-engine-tab {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+button#pills-rascue-tab {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+button#pills-insurance-tab {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.serviceCardBtn {
+    margin-top: 3rem;
+}
+
+#CardBtnIcon {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    transition: .3s ease;
+}
+
+.serviceCardBtn button:hover #CardBtnIcon {
+    transform: translateX(.9rem);
+}
+
+.serviceCardBtn button:hover {
+    transition: .3s ease;
+    background-color: #262F36e6;
+}
+
+.serviceCardBtn button {
+    background-color: #262F36;
+    color: #EFEFF0;
+    border: none;
+    border-radius: 1.6rem;
+    font-weight: 500;
+    padding: 1.6rem 2.4rem;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+}
+
+.serviceCardBtn button:hover {
+    color: var(--secoundry-color);
+}
+
+.tab-content>.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-xl-9 {
+    flex: 0 0 auto;
+    width: 69%;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+.page-third {
+    width: 100%;
+    height: 650px;
+    background-color: var(--primary-color);
+}
+
+.third-page-heading {
+    font-family: poppins;
+    font-size: 53px;
+    font-weight: 600;
+    color: white;
+    margin-left: 30px;
+}
+
+.third-page-cards {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+
+.third-page-cards h2 {
+    margin-top: 90%;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0px 8px 0px 22px;
+    color: #ffffff;
+}
+
+.third-page-cards span {
+    color: cyan;
+}
+
+.third-page-cards p {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0px 2px 0px 23px;
+    color: #ffffff;
+    font-family: poppins;
+}
+
+.card-one {
+    border-radius: 15px;
+    width: 288px;
+    transition: 0.3s;
+    height: 42.4rem;
+
+    background-size: cover;
+    opacity: 0.9;
+    background-position: center;
+    background-image: url("https://cafu.netlify.app/discovercard1.webp");
+
+}
+
+.card-one:hover {
+    transform: translateY(-7px);
+}
+
+.card-two {
+    border-radius: 15px;
+    width: 288px;
+    transition: 0.3s;
+    height: 42.4rem;
+    background-size: cover;
+    opacity: 0.9;
+    background-position: center;
+    background-image: url("https://cafu.netlify.app/discovercard2.webp");
+
+}
+
+.card-two:hover {
+    transform: translateY(-7px);
+}
+
+.card-three {
+    border-radius: 15px;
+    width: 288px;
+    transition: 0.3s;
+    height: 42.4rem;
+    background-size: cover;
+    opacity: 0.9;
+    background-position: center;
+    background-image: url("https://cafu.netlify.app/discovercard3.webp");
+
+}
+
+.card-three:hover {
+    transform: translateY(-7px);
+}
+
+.card-four {
+    border-radius: 15px;
+    width: 288px;
+    transition: 0.3s;
+    height: 42.4rem;
+    background-size: cover;
+    opacity: 0.9;
+    background-position: center;
+    background-image: url("https://cafu.netlify.app/discovercard4.webp");
+
+}
+
+.card-four:hover {
+    transform: translateY(-7px);
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+
+.page-fourth {
+    width: 100%;
+    height: 650px;
+    background-color: var(--primary-color);
+}
+
+.page-fourth .col-12-lg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    width: 80%;
+}
+
+.col-7-lg h1 {
+    margin-top: 0px;
+    font-size: 55px;
+    color: var(--secoundry-color);
+    font-weight: 600;
+}
+
+.col-7-lg p {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(204, 204, 204);
+    font-family: poppins;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.QRContent-two {
+    display: flex;
+    align-items: center;
+    background-color: #21292f;
+    padding: .4rem 1.6rem .4rem .4rem;
+    border-radius: 1rem;
+    gap: .8rem;
+    margin-top: 2rem;
+    transition: .3s ease;
+    cursor: pointer;
+    width: 228px;
+    margin-top: 20px;
+}
+
+.QRContent-two:hover {
+    transform: scale(1.2);
+}
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+.page-fifth {
+    width: 100%;
+    height: 650px;
+    background-color: var(--primary-color);
+}
+
+.page-fourth-heading {
+    font-size: 30px;
+}
+
+.page-fifth .col-12-lg {
+    display: flex;
+    align-items: center;
+}
+
+h1.page-fifth-heading {
+    font-size: 49px;
+    font-weight: 700;
+    color: rgba(238, 203, 114, 0.873);
+    font-family: 'Poppins';
+    line-height: 70px;
+}
+
+img.lp-mockup {
+    width: 90%;
+    transition: 0.3s;
+}
+
+img.lp-mockup:hover {
+    transform: translateY(-9px);
+}
+
+
+/* ------------------------------------------------------------------ */
+
+
+.page-sixth {
+    width: 100%;
+    height: 650px;
+    background-color: var(--primary-color);
+}
+
+.fifth-page-heading {
+    font-family: poppins;
+    font-size: 53px;
+    font-weight: 600;
+    color: white;
+    margin-left: 30px;
+}
+
+.fifth-page-cards {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+
+.fifth-page-cards h2 {
+    margin-top: 90%;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0px 8px 0px 22px;
+    color: #ffffff;
+}
+
+.fifth-page-cards span {
+    color: cyan;
+}
+
+.fifth-page-cards p {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0px 2px 0px 23px;
+    color: #ffffff;
+    font-family: poppins;
+}
+
+.card-one {
+    border-radius: 15px;
+    width: 288px;
+    transition: 0.3s;
+    height: 42.4rem;
+
+    background-size: cover;
+    opacity: 0.9;
+    background-position: center;
+    background-image: url("https://cafu.netlify.app/discovercard1.webp");
+
+}
+
+.card-one:hover {
+    transform: translateY(-7px);
+}
+
+
+/* ----------------------------------------------------------- */
+.swiper {
+    width: 90%;
+    height: 100%;
+
+}
+
+.swiper-slide {
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    background: #1E2428;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+img.icon-img {
+    width: 36px;
+    height: 33px;
+    margin-left: 16px;
+    margin-top: 20px;
+}
+
+.sixth-page-para {
+    color: #fff;
+    font-weight: 200;
+    font-family: 'Poppins';
+    font-size: 18px;
+    margin: 22px 10px 0px 14px;
+}
+
+img.rating-img {
+    margin-top: 171px;
+    width: 141px;
+    height: 24px;
+    margin-left: 25px;
+}
+
+.feedback {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+
+.client-name {
+    color: #d0d0d0;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+.icon {
+    margin-top: -7px;
+    transition: 0.3s;
+}
+
+.feedback .icon:hover {
+    transform: translateY(-4px);
+
+}
+
+.feedback i {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 200;
+    padding-top: -10px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin-left: -30px;
+
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    /* color: cyan; */
+    background-color: cyan;
+    height: 10px;
+    width: 10px;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.page-seven {
+    width: 100%;
+    height: 600px;
+    background-color: var(--primary-color);
+}
+
+.content-page-seven {
+    /* background-color:var(--secoundry-color); */
+    width: 400px;
+    margin-left: 74px;
+    padding-top: 10%;
+}
+.content-page-seven h1{
+    font-size: 60px;
+    color: #f1f1f1;
+    font-weight: 700;
+    
+}
+
+.qr-img {
+    width: 72px;
+    height: 67px;
+    margin-left: 9px;
+}
+
+.qr-p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #171717;
+    margin-left: 10px;
+    margin-top: 13px;
+
+}
+
+.qr-div {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: 230px;
+    height: 80px;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+.qr-div:hover {
+    transform: scale(1.1);
+}
+
+.col-12-lg.col-12-lg.col-12.col-sm-12.col-md-12.col-lg-12.col-xl-12 {
+    display: flex;
+    align-items: center;
+    
+}
+
+.mobile-mockup-img{
+    height: 360px;
+    width: 250px;
+    margin-left: 140px;
+    margin-top: 60px;
+}
+/* ---------------------------------------------------------------------------------- */
+
+.accordion{
+    margin: 40px 0;
+  }
+  .accordion .item {
+      border: none;
+      margin-bottom: 50px;
+      background: none;
+  }
+  .t-p{
+    color: rgb(193 206 216);
+    padding: 40px 30px 0px 30px;
+  }
+  .accordion .item .item-header h2 button.btn.btn-link {
+      background: #333435;
+      color: white;
+      border-radius: 0px;
+      font-family: 'Poppins';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 2.5;
+      text-decoration: none;
+  }
+  .accordion .item .item-header {
+      border-bottom: none;
+      background: transparent;
+      padding: 0px;
+      margin: 2px;
+  }
+  
+  .accordion .item .item-header h2 button {
+      color: white;
+      font-size: 20px;
+      padding: 15px;
+      display: block;
+      width: 100%;
+      text-align: left;
+  }
+  
+  .accordion .item .item-header h2 i {
+      float: right;
+      font-size: 30px;
+      color: #eca300;
+      background-color: black;
+      width: 60px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+  }
+  
+  button.btn.btn-link.collapsed i {
+      transform: rotate(0deg);
+  }
+  
+  button.btn.btn-link i {
+      transform: rotate(180deg);
+      transition: 0.5s;
+  }
+  
+
+/* ------------------------------------------------------------------------------- */
+
+.FooterSection{
+    padding: 5.5rem 0;
+    background-color: #111315;
+}
+.FooterConatiner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.FooterMenuListContainer{
+    display: flex;
+    gap: 12rem;
+    justify-content: end;
+}
+.FooterMenuList{
+    line-height: 3.7rem;
+}
+.FooterStore{
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 2.2rem;
+}
+.FooterLogo img{
+    width: 14.6rem;
+    height: auto;
+}
+.FooterStore img:hover{
+    transform: scale(1.1);
+}
+.FooterStore img{
+    width: 120px;
+    height: auto;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.FooterList:hover{
+    color: #fff;
+}
+.FooterList .material-symbols-outlined{
+    margin-right: 1rem;
+}
+.FooterList{
+    font-size: 15px;
+    transition: .3s ease;
+    font-weight: 400;
+    color: #7E878E;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#FooterRescue{
+    color: #ea2424;
+}
+.underLine{
+    background-color: #2c363f;
+    width: 100%;
+    height: 0.5px;
+    margin: 5rem 0;
+}
+.footerSocialMedia{
+    display: flex;
+    gap: 1.6rem;
+}
+.footerSocialMedia img:hover{
+    
+    transform: scale(1.1);
+}
+.footerSocialMedia img{
+    width: 2.5rem;
+    height: auto;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.FooterCradit{
+    display: flex;
+    justify-content: space-between;
+}
+.FooterCopyrightContainer{
+    display: flex;
+    gap: 2.4rem;
+}
+.FooterCopyright{
+    font-weight: 400;
+    color: #7E878E;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
